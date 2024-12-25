@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Groq Chat Interface</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="chat-container"></div>
+    <div class="loading" id="loading-indicator">메시지를 처리중입니다...</div>
+    <div id="input-container">
+        <input type="text" id="message-input" placeholder="메시지를 입력하세요...">
+        <button id="send-button">전송</button>
+    </div>
+
+    <script type="module">
+        import { MessageHandler } from './js/messageHandler.js';
+
+        // Initialize the chat application
+        const app = new MessageHandler();
+    </script>
+</body>
+
+</html>
